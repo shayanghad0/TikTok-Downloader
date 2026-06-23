@@ -1,40 +1,47 @@
 ### How to use
 
-1. **Install the required package**  
-   Open a terminal / command prompt and run:
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/yourusername/TikTok-Downloader
+   cd TikTok-Downloader
+   ```
+
+2. **Install the required library**
    ```bash
    pip install yt-dlp
    ```
 
-2. **Prepare your text file**  
-   Create a `.txt` file with one TikTok video link per line, for example:
+3. **Prepare your text file** (e.g., `links.txt`)  
+   You can mix single video URLs and profile URLs (one per line):
    ```
-   https://www.tiktok.com/@user/video/123456789
-   https://www.tiktok.com/@user/video/987654321
+   https://www.tiktok.com/@dramaticdogs22
+   https://www.tiktok.com/@dramaticdogs22/video/123456789
    https://vm.tiktok.com/abc123/
    ```
 
-3. **Run the script**  
-   Execute the script and enter the full path to your text file when prompted:
+4. **Run the script**
    ```bash
-   python downloader.py
+   python main.py
    ```
-   All videos will be saved inside a newly created `tdownload` folder as `video1.mp4`, `video2.mp4`, etc.
+   When prompted, enter the path to your text file.
+
+All videos will be saved in the `tdownload/` folder, numbered consecutively as `video1.mp4`, `video2.mp4`, etc., in the order they are processed.  
+For profile links, the script asks how many videos to download (`all` or a number) and downloads the most recent ones.
 
 ---
 
 ### Notes
 
-- The script uses **yt‑dlp**, a robust and up‑to‑date downloader that handles TikTok’s frequent changes.
-- If a download fails, the error is printed and the script continues with the next link.
-- Make sure your `yt-dlp` is kept up‑to‑date (`pip install -U yt-dlp`) to avoid issues with TikTok’s security measures.
-
+- Keep `yt-dlp` up to date (`pip install -U yt-dlp`) to handle TikTok’s frequent changes.
+- If a video fails to download (private/deleted), it is **skipped automatically** and the script continues with the next link.
+- The numbering is global across all links – profile videos are numbered after the previously downloaded single videos.
 
 #### Todo
 
 - [ ] 1. Add a webpanel
-- [ ] 2. Add a GIU
-- [ ] 3. Add a GIU + webpanel
+- [ ] 2. Add a GUI
+- [ ] 3. Add a GUI + webpanel
 - [ ] 4. Add a Telegram Bot
-- [ ] Add a Node.js
-- [ ] Add a GoLang
+- [ ] Add a Node.js version
+- [ ] Add a Go version
+- [x] Add a Profile Downloader
