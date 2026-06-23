@@ -1,7 +1,3 @@
-💡 Tip
-This is private code for my YouTube channel.
-I earn money from TikTok content, but you can still use it.
-
 ### How to use
 
 1. **Clone the repository**
@@ -43,7 +39,7 @@ For profile links, the script asks how many videos to download (`all` or a numbe
 #### Todo
 
 - [ ] 1. Add a webpanel
-- [ ] 2. Add a GUI
+- [x] 2. Add a GUI
 - [ ] 3. Add a GUI + webpanel
 - [ ] 4. Add a Telegram Bot
 - [ ] Add a Node.js version
