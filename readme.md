@@ -32,6 +32,9 @@
 
 #### Todo
 
-[  ] 1. Add a webpanel
-[  ] 2. Add a GIU
-[  ] 1. Add a GIU + webpanel
+- [ ] 1. Add a webpanel
+- [ ] 2. Add a GIU
+- [ ] 3. Add a GIU + webpanel
+- [ ] 4. Add a Telegram Bot
+- [ ] Add a Node.js
+- [ ] Add a GoLang
