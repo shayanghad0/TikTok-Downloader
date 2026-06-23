@@ -1,3 +1,7 @@
+💡 Tip
+This is private code for my YouTube channel.
+I earn money from TikTok content, but you can still use it.
+
 ### How to use
 
 1. **Clone the repository**
